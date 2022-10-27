@@ -141,4 +141,4 @@ export async function pedirDatos() {
  
 }
 
-
+console.log("hola")
