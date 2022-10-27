@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calidad del Aire</title>
+    <link href="./main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo">¡Te mostramos la calidad del aire en tu ciudad!</h1>
+
+    <section>
+      <div class="centrar">
+        <input id="inputCiudad" class="form-control-lg" type="text" placeholder="Escriba la ciudad">
+        <input type="button" class="btn btn-light ms-4" value="Buscar" id="btn">
+        </div>
+        <section class="orden">
+        <div>
+            <main id="respuestas" class="datos"></main>
+        </div>
+        <div>
+        <canvas class="graffic" id="variables" width="1300" height="600"></canvas>
+        </div>
+      </section>
+    </section>
+    </header>  
+
+    <section class="seccion">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">AQ</th>
+                <th scope="col">Nivel de contaminación</th>
+                <th scope="col">Implicaciones</th>
+                <th scope="col">Advertencias</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">1</th>
+                <td style="background-color:green">Bien</td>
+                <td>Calidad del aire satisfactoria, y la contaminacion
+                    del aire representa poco o ningún riesgo.
+                </td>
+                <td>Ninguno</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td style="background-color:yellow">Moderado</td>
+                <td>Calidad del aire aceptable; molesto para grupo de gente
+                    inusualmente sensibles a la contaminación del aire.
+                </td>
+                <td>Los niños y adultos activos, y las personas con enfermedades respiratorias, como el asma, deben limitar el esfuerzo prolongado al aire libre.</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td style="background-color:orange">Poco saludable, para grupos sensibles</td>
+                <td>Grupos sensibles pueden experimentar efectos en la salud.
+                     No es probable que el público en general se vea afectado.</td>
+                <td>Los niños y adultos activos, y las personas con enfermedades respiratorias, como el asma, deben limitar el esfuerzo prolongado al aire libre.</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td style="background-color:red">Insalubre</td>
+                <td>Todo el mundo puede comenzar a experimentar efectos en la salud;
+                     los miembros de grupos sensibles pueden experimentar efectos más graves en la salud</td>
+                <td>Los niños y adultos activos, y las personas con enfermedades respiratorias, como el asma,
+                     deben evitar el esfuerzo prolongado al aire libre; todos los demás, especialmente los niños, deben limitar el esfuerzo prolongado al aire libre</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td style="background-color:purple">Muy poco saludable</td>
+                <td>Advertencias sanitarias de condiciones de emergencia.
+                     Es más probable que toda la población se vea afectada.</td>
+                <td>Los niños y adultos activos, y las personas con enfermedades respiratorias, 
+                    como el asma, deben evitar todo esfuerzo al aire libre; todos los demás, especialmente los niños, deben limitar el esfuerzo al aire libre.</td>
+              </tr>
+            </tbody>
+          </table>
+    </section>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./chart.js"></script>
+</body>
+</html>

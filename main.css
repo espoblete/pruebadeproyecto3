@@ -1,0 +1,95 @@
+.header {
+    background-image: url("./imagenes/cielo.png");
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 55px;
+    }
+.titulo {
+    font-family: sans-serif;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.centrar {
+    display: flex;
+    justify-content: center;
+}
+.orden {
+    display: flex;
+}
+.datos {
+    display: flex;
+    padding-right: 10px;
+    font-size: large;
+    font-family: sans-serif;
+
+}
+.tabliya th {
+    padding-bottom: 15px;
+    font-size: large;
+}
+.tabliya td {
+    padding-bottom: 35px;
+    padding-right: 12px;
+    
+}
+.container {
+    background-color: blue;
+    display: grid;
+}
+.seccion {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 8px;
+}
+.seccion thead {
+    background-color: black;
+    color:white;
+}
+.tabla td{
+    padding-left: 10px;
+}
+.tabla th {
+    padding-bottom: 15px;
+}
+#tabla1{
+
+    font-size: smaller;
+
+}
+
+.tabla2{
+    max-width: 60%;
+}
+@media screen and (max-width: 1280px){
+    .seccion {
+        font-size: small;
+    }
+    .header {
+        padding: 18px;
+    }
+    .centrar input {
+        margin-bottom: 25px;
+    }
+    .tabliya th  {
+        padding-right: 8px;
+    }
+    .orden {
+        display: grid;
+        font-size: x-small;
+    }
+    .graffic {
+        display: flex;
+        background-position: center;
+        padding-right: 35px;
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 1850px){
+    html * {margin: 0; padding: 0;}
+}
